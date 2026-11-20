@@ -197,3 +197,11 @@ ul.plain li { margin-bottom: 8px; }
 
 .page-title + section { margin-top: 32px; }
 .plain ul { margin-top: 6px; }
+
+/* Small round profile photo */
+.hero { grid-template-columns: 150px 1fr; gap: 40px; }
+.hero-photo { width: 150px; aspect-ratio: 1 / 1; border-radius: 50%; font-size: 2.6rem; }
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; gap: 24px; }
+  .hero-photo { width: 120px; font-size: 2.1rem; }
+}
