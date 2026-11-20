@@ -226,3 +226,6 @@ ul.plain li { margin-bottom: 8px; }
 
 /* Show the whole photo in the circle (no zoom) */
 .hero-photo img { transform: none; object-position: 50% 25%; }
+
+/* Own name in author lists */
+.pubs strong { font-weight: 700; color: var(--ink); }
