@@ -1,8 +1,8 @@
 :root {
   --ink: #1f2a33;
   --muted: #5b6770;
-  --accent: #2f6f5e;
-  --accent-soft: #e6f0ec;
+  --accent: #5e3f86;
+  --accent-soft: #efe8f6;
   --line: #e3e6e8;
   --bg: #fbfaf7;
   --max: 980px;
@@ -22,7 +22,7 @@ body {
 }
 
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-a:hover { color: #1d4a3e; }
+a:hover { color: #432a63; }
 
 h1, h2, h3, .brand {
   font-family: "Lora", Georgia, "Times New Roman", serif;
@@ -132,7 +132,7 @@ section h2 {
   font-size: 0.95rem;
 }
 .btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: #1d4a3e; color: #fff; }
+.btn-primary:hover { background: #432a63; color: #fff; }
 .btn-ghost { color: var(--accent); background: transparent; }
 .btn-ghost:hover { background: var(--accent-soft); }
 
