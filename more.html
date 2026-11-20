@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>More | Claudia V. Montanía</title>
+  <meta name="description" content="Claudia V. Montanía, Regional &amp; Agricultural Economist. Research, extension, teaching and mentoring.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Claudia V. Montanía</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="extension-outreach.html">Extension &amp; Outreach</a></li>
+        <li><a href="teaching-mentoring.html">Teaching &amp; Mentoring</a></li>
+        <li><a href="more.html" aria-current="page">More</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1 class="page-title">More</h1>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="plain">
+          <li>I speak 3 languages: English, Spanish, and Guarani.</li>
+          <li>I am a proficient user of:
+            <ul>
+              <li>R</li>
+              <li>STATA</li>
+              <li>IMPLAN</li>
+              <li>MATLAB</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>About me</h2>
+        <ul class="plain">
+          <li>I'm a proud Paraguayan and <a href="https://en.wikipedia.org/wiki/Guarani_language">Guarani</a> speaker.</li>
+          <li>I love math and I volunteer for <a href="https://www.omapa.org/">OMAPA</a>, the Paraguayan mathematical olympiads organization.</li>
+          <li>I am a huge soccer fan!</li>
+          <li>I love hiking and spotting animals along the way.</li>
+        </ul>
+      </section>
+
+      <figure>
+        <div class="img-box"><img src="img/ypacarai.jpg" alt="Ypacaraí Lake, Central Paraguay" onerror="this.parentNode.parentNode.remove()"></div>
+        <figcaption>Ypacaraí Lake, Central Paraguay.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Claudia V. Montanía</span>
+      <span><a href="mailto:montania@illinois.edu">montania@illinois.edu</a> &middot; <a href="cv.pdf">Curriculum Vitae</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var t = document.querySelector('.nav-toggle'), n = document.getElementById('site-nav');
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('open');
+      t.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

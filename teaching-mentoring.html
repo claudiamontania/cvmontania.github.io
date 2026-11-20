@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaching & Mentoring | Claudia V. Montanía</title>
+  <meta name="description" content="Claudia V. Montanía, Regional &amp; Agricultural Economist. Research, extension, teaching and mentoring.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Claudia V. Montanía</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="extension-outreach.html">Extension &amp; Outreach</a></li>
+        <li><a href="teaching-mentoring.html" aria-current="page">Teaching &amp; Mentoring</a></li>
+        <li><a href="more.html">More</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1 class="page-title">Teaching &amp; Mentoring</h1>
+      <p class="lead">I have experience teaching and mentoring students.</p>
+
+      <section>
+        <h2>Teaching</h2>
+        <ul class="plain">
+          <li>Official certification from the <a href="https://www.aneca.es/en/aneca">Spanish National Agency for Quality Assessment and Accreditation (ANECA)</a> to qualify as an Assistant Professor under the title "Profesor Ayudante Doctor" in Spanish universities.</li>
+          <li>Quantitative Methods in Social Sciences for students of the Master's Degree in Social Sciences in <a href="https://www.flacso.edu.py/">Facultad Latinoamericana de Ciencias Sociales (FLACSO)</a>.</li>
+          <li>Geometry, Algebra, Number Theory, and Combinatorics for the <a href="https://www.omapa.org/proyectos/iniciacion-cientifica/">Course of Scientific Initiation for Young Talents with emphasis in Mathematics</a> in <a href="https://www.omapa.org/">OMAPA</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Mentoring</h2>
+        <p>I have co-supervised Master's and PhD. students in Natural Resources and Social Sciences:</p>
+        <ul class="plain">
+          <li>Master's in Computer Science with Emphasis in Research and Innovation. - <a href="https://www.universidadcatolica.edu.py/">Universidad Católica Nuestra Señora de la Asunción</a>, Paraguay</li>
+          <li>Ph.D. Program in <a href="https://docinade.ac.cr/docinade/">Natural Sciences for Development, National University of Costa Rica</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Service</h2>
+        <ul class="plain">
+          <li>I serve as the Chair of the <a href="https://www.narsc.org/newsite/awards-prizes/narsc-student-competitions/">Graduate-Student-Author Paper Competition</a> - North American Regional Science Association.</li>
+        </ul>
+      </section>
+
+      <p><a class="btn btn-ghost" href="mailto:montania@illinois.edu">Contact me if you have any questions!</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Claudia V. Montanía</span>
+      <span><a href="mailto:montania@illinois.edu">montania@illinois.edu</a> &middot; <a href="cv.pdf">Curriculum Vitae</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var t = document.querySelector('.nav-toggle'), n = document.getElementById('site-nav');
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('open');
+      t.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

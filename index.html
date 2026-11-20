@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claudia V. Montanía | cvmontania</title>
+  <meta name="description" content="Claudia V. Montanía, Regional &amp; Agricultural Economist. Research, extension, teaching and mentoring.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Claudia V. Montanía</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="extension-outreach.html">Extension &amp; Outreach</a></li>
+        <li><a href="teaching-mentoring.html">Teaching &amp; Mentoring</a></li>
+        <li><a href="more.html">More</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <div class="hero-photo">
+          <img src="img/profile.jpg" alt="Claudia V. Montanía" onerror="this.remove()">
+          <span aria-hidden="true">CM</span>
+        </div>
+        <div>
+          <h1>Claudia V. Montanía</h1>
+          <p class="role">Regional &amp; Agricultural Economist</p>
+          <p>I am an economist specializing in regional economic techniques and agricultural economics, with a particular focus on regional disparities. My work consistently bridges theory and application, helping policymakers design effective interventions.</p>
+          <p>I am a Senior Research Specialist at the <a href="https://ler.illinois.edu/climate-jobs-institute/">Climate Jobs Institute</a>, <a href="https://ler.illinois.edu/">School of Labor and Employment Relations</a>, University of Illinois Urbana-Champaign, specializing in the economic impacts of the climate transition on jobs and communities. My research focuses on regional economics and labor markets, examining how economic shocks and structural shifts ripple through communities and industries across different regions.</p>
+          <p>I have built my expertise across leading institutions, including the <a href="https://aaec.arizona.edu/">Department of Agriculture and Applied Economics</a> at the University of Arizona, where I work as an Extension Economist, and the <a href="https://www.undp.org/acceleratorlabs">United Nations Development Programme's Accelerator Laboratory</a> in Paraguay, where I previously served as a researcher for development projects.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="cv.pdf">Curriculum Vitae (PDF)</a>
+            <a class="btn btn-ghost" href="mailto:montania@illinois.edu">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Claudia V. Montanía</span>
+      <span><a href="mailto:montania@illinois.edu">montania@illinois.edu</a> &middot; <a href="cv.pdf">Curriculum Vitae</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var t = document.querySelector('.nav-toggle'), n = document.getElementById('site-nav');
+    t.addEventListener('click', function () {
+      var open = n.classList.toggle('open');
+      t.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
